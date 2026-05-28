@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- サイトタイトル -->
+    <title>弓道場 使用状況</title>
+
+    <!-- CSSファイル読み込み -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- サイト全体 -->
+    <div class="container">
+
+        <!-- タイトル -->
+        <header>
+            <h1>弓道場 使用状況</h1>
+            <p>大学弓道場の使用予定を確認できます</p>
+        </header>
+
+        <!-- 月切り替えボタン -->
+        <div class="calendar-header">
+            <button id="prevBtn">← 前の月</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextBtn">次の月 →</button>
+        </div>
+
+        <!-- カレンダー表示エリア -->
+        <div class="calendar" id="calendar"></div>
+
+        <!-- 使用状況表示エリア -->
+        <div class="schedule-box">
+            <h3>選択した日の予定</h3>
+            <div id="scheduleDetail">
+                日付をクリックしてください
+            </div>
+        </div>
+
+        <!-- 注意事項 -->
+        <footer>
+            <p>
+                ※ 個人情報保護のため、本名などは掲載していません。
+            </p>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript読み込み -->
+    <script src="script.js"></script>
+</body>
+</html>
